@@ -1,0 +1,17 @@
+<div class="main-component">
+    <div class="main-toogle">
+        <mat-button-toggle-group #group="matButtonToggleGroup" [value]="selectedVal" (change)="onValueChange(group.value)">
+            <mat-button-toggle value="first">First</mat-button-toggle>
+            <mat-button-toggle value="second">Second</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <div class="main-playground">
+        <div  *ngIf="selectedVal === 'first'">
+            <first-playground></first-playground>
+        </div>
+    
+        <div *ngIf="selectedVal === 'second'">
+            <second-playground></second-playground>
+        </div>
+    </div>
+</div>
