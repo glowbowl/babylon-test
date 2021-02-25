@@ -16,8 +16,6 @@ export class SecondPlaygroundComponent implements OnInit {
   @Output() scene: Scene;
   @Output() camera: ArcRotateCamera;
 
-  constructor() { }
-
   ngOnInit(): void {
     this.engine = new Engine(this.canvas.nativeElement, true);
     this.scene = new Scene(this.engine);

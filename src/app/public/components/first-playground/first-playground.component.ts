@@ -14,8 +14,6 @@ export class FirstPlaygroundComponent implements OnInit {
   @Output() scene: Scene;
   @Output() camera: FreeCamera;
 
-  constructor() { }
-
   ngOnInit(): void {
     this.engine = new Engine(this.canvas.nativeElement, true);
     this.scene = new Scene(this.engine);

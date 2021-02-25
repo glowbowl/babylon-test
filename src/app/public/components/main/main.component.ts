@@ -5,14 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
 
   selectedVal: string;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   public onValueChange(val: string) {
     this.selectedVal = val;
